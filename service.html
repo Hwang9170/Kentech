@@ -29,59 +29,139 @@
     </header>
 
     <section id="features">
+      <section id="course-options">
         <div class="container">
-            <h2>서비스 소개 </h2>
-
-            <div style="border: 3px solid #008080; border-radius: 15px; padding: 20px; background: linear-gradient(to bottom, #e0f7fa, #ffffff); box-shadow: 0 8px 16px rgba(0, 128, 128, 0.2); margin-bottom: 30px;">
-              <h1 style="font-family: 'Roboto', sans-serif; color: #004d40; text-align: center; font-size: 24px; margin-bottom: 15px;">광주·전남 ESG 에너지 역사 투어</h1>
-              <h2 style="font-family: 'Roboto', sans-serif; color: #00695c; font-size: 20px; margin-bottom: 10px;">1일차: 광주</h2>
-              <p style="font-family: 'Arial', sans-serif; font-size: 16px; color: #333; line-height: 1.8;">
-                  <strong>09:00</strong> - <span style="color: #004d40;">국립아시아문화전당 탐방</span><br>
-                  <span style="color: #555;">- 국내 최초의 친환경 설계 건축물에서 태양광 에너지와 지속 가능한 전시 탐험.</span><br><br>
+            <h2>GreenMind 투어 코스</h2>
+            <p>ESG와 지속 가능한 여행을 테마로 한 세 가지 특별 코스를 만나보세요. 각 코스는 환경 보호, 에너지 효율, 지역 문화 체험을 포함하고 있습니다.</p>
+            
+            <!-- A 코스 -->
+            <div class="course-container" style="margin-bottom: 20px;">
+              <h3>A 코스: 광주 문화와 에너지 (1박 2일)</h3>
+              <img src="https://via.placeholder.com/600x300" alt="광주 문화" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+              <button onclick="toggleDetails('courseA')" 
+                      style="padding: 10px 20px; background-color: #004d40; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                  자세히 보기
+              </button>
+              <div id="courseA" style="display: none; margin-top: 10px; padding: 10px; border: 1px solid #ddd; background-color: #e0f7fa; border-radius: 5px;">
+                  <h4>Day 1: 광주</h4>
+                  <p><strong>09:00:</strong> <u>국립아시아문화전당 탐방</u><br>
+                      - 국내 최초의 친환경 설계 건축물 ACC에서 태양광 에너지와 지속 가능한 전시를 체험합니다.<br>
+                      - 디지털 아트를 통해 ESG와 환경 보호의 의미를 창의적으로 탐구합니다.
+                  </p>
+                  <p><strong>11:00:</strong> <u>양림동 역사문화마을 탐방</u><br>
+                      - 근대 건축물과 도시 재생의 성공 사례 탐방.<br>
+                      - 재활용 자재로 복원된 공간과 태양광 가로등을 통해 지속 가능한 도시 설계 배우기.
+                  </p>
+                  <p><strong>12:30:</strong> <u>점심: 광주 송정 떡갈비</u><br>
+                      - 지역에서 공급받은 신선한 재료로 만든 광주의 대표 음식.<br>
+                      - 탄소 발자국을 줄이는 로컬 푸드 중심의 식사.
+                  </p>
+                  <p><strong>14:00:</strong> <u>무등산 친환경 숲 탐방</u><br>
+                      - 국립공원 무등산에서 숲 생태계를 탐험하며 자연의 탄소 흡수 기능을 배웁니다.<br>
+                      - 숲 가이드와 함께 재활용 소재로 구성된 탐방로를 걷습니다.
+                  </p>
+                  <p><strong>16:30:</strong> <u>광주 시티투어 버스 체험</u><br>
+                      - 전기버스를 이용해 광주의 주요 명소 탐방.<br>
+                      - 스마트 교통 시스템과 에너지 효율적인 도시 운영 사례를 학습합니다.
+                  </p>
+                  <p><strong>18:30:</strong> <u>저녁: 광주 한정식</u><br>
+                      - 계절별 지역 농산물로 구성된 정갈한 한정식. 다양한 나물과 생선구이, 된장찌개로 구성된 건강한 전통 요리.
+                  </p>
+                  <p><strong>20:00:</strong> <u>숙소 체크인</u><br>
+                      - 친환경 숙소에서 하루를 마무리하며 다음 날 일정을 준비합니다.
+                  </p>
                   
-                  <strong>10:30</strong> - <span style="color: #004d40;">양림동 역사문화마을 탐방</span><br>
-                  <span style="color: #555;">- 근대 건축물과 도시 재생 사례를 관찰하며 친환경 도시 설계 배우기.</span><br><br>
-                  
-                  <strong>12:00</strong> - <span style="color: #004d40;">점심: 광주 송정 떡갈비</span><br>
-                  <span style="color: #555;">- 지역 농가에서 공급받은 신선한 재료로 만든 광주의 대표 음식.</span><br><br>
-                  
-                  <strong>13:00</strong> - <span style="color: #004d40;">무등산 친환경 숲 탐방</span><br>
-                  <span style="color: #555;">- 국립공원의 생태계를 탐방하며 탄소 흡수의 중요성을 체험.</span><br><br>
-                  
-                  <strong>15:00</strong> - <span style="color: #004d40;">광주 시티투어 버스 체험</span><br>
-                  <span style="color: #555;">- 에너지 효율적인 전기버스로 운영되는 투어로, 광주의 주요 명소 탐방.</span><br><br>
-                  
-                  <strong>18:00</strong> - <span style="color: #004d40;">저녁: 광주 한정식</span><br>
-                  <span style="color: #555;">- 제철 지역 농산물로 구성된 건강하고 균형 잡힌 전통 한정식.</span>
-              </p>
+                  <h4>Day 2: 광주 & 나주</h4>
+                  <p><strong>07:30:</strong> <u>아침: 광주 전통 시장 방문 및 지역 음료 체험</u><br>
+                      - 광주 전통 시장에서 아침 식사와 함께 지역 특산물 및 친환경 음료를 체험합니다.
+                  </p>
+                  <p><strong>09:00:</strong> <u>한국전력공사 본사 견학</u><br>
+                      - 스마트 그리드 기술과 ESG 경영 사례를 직접 학습합니다.<br>
+                      - 신재생 에너지 기술 체험과 탄소중립 목표에 대해 알아봅니다.
+                  </p>
+                  <p><strong>11:30:</strong> <u>빛가람 전망대 방문</u><br>
+                      - 에너지밸리와 나주 혁신도시의 친환경 도시 설계 사례를 한눈에 조망.<br>
+                      - 지역 경제와 환경 보호의 성공적 상생 모델 확인.
+                  </p>
+                  <p><strong>12:30:</strong> <u>점심: 나주 배 한정식</u><br>
+                      - 나주 배를 활용한 다양한 요리와 전통 한정식을 즐길 수 있습니다.<br>
+                      - 로컬 푸드로 구성된 지속 가능한 식사.
+                  </p>
+                  <p><strong>14:00:</strong> <u>나주 혁신도시 에너지밸리 탐방</u><br>
+                      - 신재생 에너지 기술 및 기업 협력 사례를 배우며 지속 가능한 경제 모델을 탐구합니다.
+                  </p>
+                  <p><strong>16:30:</strong> <u>마무리 및 귀가</u><br>
+                      - 1박 2일 간의 여행을 마무리하며, 광주와 나주의 ESG 및 에너지 탐방의 의미를 되새깁니다.
+                  </p>
+              </div>
           </div>
           
-          <div style="border: 3px solid #33691e; border-radius: 15px; padding: 20px; background: linear-gradient(to bottom, #f1f8e9, #ffffff); box-shadow: 0 8px 16px rgba(51, 105, 30, 0.2); margin-bottom: 30px;">
-              <h2 style="font-family: 'Roboto', sans-serif; color: #2e7d32; font-size: 20px; margin-bottom: 10px;">2일차: 전남 나주</h2>
-              <p style="font-family: 'Arial', sans-serif; font-size: 16px; color: #333; line-height: 1.8;">
-                  <strong>08:00</strong> - <span style="color: #2e7d32;">아침: 나주 곰탕</span><br>
-                  <span style="color: #555;">- 지역 특산물을 사용한 전통 곰탕으로 든든한 하루 시작.</span><br><br>
-                  
-                  <strong>09:30</strong> - <span style="color: #2e7d32;">한국전력공사 본사 견학</span><br>
-                  <span style="color: #555;">- 스마트 그리드와 신재생 에너지 기술을 체험하며 ESG 경영 학습.</span><br><br>
-                  
-                  <strong>12:00</strong> - <span style="color: #2e7d32;">점심: 나주 배 한정식</span><br>
-                  <span style="color: #555;">- 나주 배를 활용한 독특한 요리로 구성된 한정식.</span><br><br>
-                  
-                  <strong>13:30</strong> - <span style="color: #2e7d32;">빛가람 전망대 방문</span><br>
-                  <span style="color: #555;">- 나주 혁신도시의 친환경 도시 설계 사례를 한눈에 관찰.</span><br><br>
-                  
-                  <strong>15:00</strong> - <span style="color: #2e7d32;">나주 혁신도시 에너지밸리 탐방</span><br>
-                  <span style="color: #555;">- 신재생 에너지 기술과 ESG 경영 사례를 배울 수 있는 탐방.</span><br><br>
-                  
-                  <strong>17:30</strong> - <span style="color: #2e7d32;">저녁: 전라도 생선구이 정식</span><br>
-                  <span style="color: #555;">- 지속 가능한 어획물로 만든 생선구이와 지역 특산 반찬.</span>
-              </p>
-          </div>
-          
+    
+            <!-- B 코스 -->
+            <div class="course-container" style="margin-bottom: 20px;">
+                <h3>B 코스: 전남 에너지밸리와 자연</h3>
+                <img src="https://via.placeholder.com/600x300" alt="전남 에너지밸리" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+                <button onclick="toggleDetails('courseB')" 
+                        style="padding: 10px 20px; background-color: #33691e; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    자세히 보기
+                </button>
+                <div id="courseB" style="display: none; margin-top: 10px; padding: 10px; border: 1px solid #ddd; background-color: #f1f8e9; border-radius: 5px;">
+                    <p><strong>08:00:</strong> <u>나주 곰탕 아침식사</u><br>
+                        - 100년 전통의 방식으로 끓여낸 깊은 국물 맛.<br>
+                        - 지역 농가를 지원하는 지속 가능한 농산물로 조리된 전통 음식.
+                    </p>
+                    <p><strong>10:00:</strong> <u>한국전력공사 본사 견학</u><br>
+                        - 스마트 그리드 기술 체험.<br>
+                        - 탄소중립을 목표로 한 에너지 관리 시스템과 ESG 경영 사례를 직접 학습.
+                    </p>
+                    <p><strong>12:00:</strong> <u>점심: 나주 배 한정식</u><br>
+                        - 나주 배를 활용한 샐러드와 전통 한정식.<br>
+                        - 로컬 푸드를 기반으로 한 지속 가능한 식사 제공.
+                    </p>
+                    <p><strong>14:00:</strong> <u>빛가람 전망대 방문</u><br>
+                        - 나주 혁신도시의 친환경 도시 설계와 에너지밸리 전경을 한눈에 조망.
+                    </p>
+                    <p><strong>15:30:</strong> <u>나주 혁신도시 에너지밸리 탐방</u><br>
+                        - 신재생 에너지 기술과 기업들의 협력 사례 탐방.<br>
+                        - 지역 경제와 환경 보호의 상생을 배우는 시간.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- C 코스 -->
+            <div class="course-container" style="margin-bottom: 20px;">
+                <h3>C 코스: 지속 가능한 도시 탐험</h3>
+                <img src="https://via.placeholder.com/600x300" alt="스마트 도시 탐험" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+                <button onclick="toggleDetails('courseC')" 
+                        style="padding: 10px 20px; background-color: #2196F3; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    자세히 보기
+                </button>
+                <div id="courseC" style="display: none; margin-top: 10px; padding: 10px; border: 1px solid #ddd; background-color: #e3f2fd; border-radius: 5px;">
+                    <p><strong>09:00:</strong> <u>스마트 도시 투어</u><br>
+                        - 친환경 도시 설계와 운영 사례 탐방.<br>
+                        - 지속 가능한 도시 개발을 위한 스마트 솔루션을 직접 체험.
+                    </p>
+                    <p><strong>11:00:</strong> <u>AI 로봇 체험</u><br>
+                        - 기술과 지속 가능성의 조화를 배우는 창의적인 체험 활동.<br>
+                        - 미래 기술의 활용 사례를 통해 환경 보호와 연결성을 학습.
+                    </p>
+                    <p><strong>12:00:</strong> <u>점심: 전라도 생선구이 정식</u><br>
+                        - 지속 가능한 어획물로 만든 생선구이와 지역 농산물 반찬 제공.
+                    </p>
+                    <p><strong>14:00:</strong> <u>신재생 에너지 센터 방문</u><br>
+                        - 태양광, 풍력 등 신재생 에너지를 직접 배우고 체험.
+                    </p>
+                    <p><strong>15:30:</strong> <u>스마트 교통 시뮬레이션 체험</u><br>
+                        - 에너지 절약과 탄소 배출 감소를 목표로 한 스마트 교통 기술 체험.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="container">
     <h2 style="font-size: 24px; color: #333;">예시 제공 PPT 보기</h2>
-
+<p> 현장체험 전후로 ESG 관련 교육 자료 무료 제공
+</p>
     <!-- 초등 PDF 보기 버튼 -->
     <button 
         onclick="window.open('/pdf/12-초-지속가능한 소비-PPT.pdf', '_blank')" 
@@ -126,6 +206,16 @@
     var navLinks = document.getElementById('nav-links');
     navLinks.classList.toggle('active');
 });
+
+function toggleDetails(courseId) {
+        const details = document.getElementById(courseId);
+        if (details.style.display === "none" || details.style.display === "") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+
     </script>
 </body>
 </html>
