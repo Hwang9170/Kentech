@@ -26,10 +26,26 @@
   </nav>
 
   
-<div class="center"> 
-  <h1> 예약</h1>
-</div>
-
+  <div class="center">
+    <h1>프로그램 예약</h1>
+    <form id="reservation-form">
+      <label for="name">이름:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="program">참여 프로그램:</label>
+      <select id="program" name="program">
+        <option value="ai">AI 기술 실습</option>
+        <option value="energy">신재생 에너지 체험</option>
+        <option value="culture">남도 문화 탐방</option>
+      </select>
+  
+      <label for="date">예약 날짜:</label>
+      <input type="date" id="date" name="date" required>
+  
+      <button type="submit">예약하기</button>
+    </form>
+  </div>
+  
   <ul class="wrapper">
     <li class="icon instagram">
       <span class="tooltip">Instagram</span>
