@@ -15,8 +15,9 @@ body {
   align-items: center;
 }
 
+* 헤더 배경색 변경 */
 header {
-  background: #fff;
+  background: #f4f4f4;
   color: #333;
   padding: 20px 0;
   display: flex;
@@ -79,25 +80,34 @@ nav {
 }
 
 #hero {
-  background-image: url('/images.png');
+  position: relative;
+  background-image: url('/image\ copy.png');
   background-size: cover;
   background-position: center;
-  color: #333;
+  color: #ffffff;
   padding: 150px 0;
   text-align: center;
 }
 
-#hero h2 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+/* 어두운 오버레이 추가 */
+#hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* 어두운 반투명 오버레이 */
+  z-index: 1; /* 이미지 위에 오버레이가 오도록 설정 */
 }
 
-#hero p {
-  font-size: 1.5rem;
+#hero h2, #hero p, .btn-learn-more {
+  position: relative; /* 텍스트와 버튼을 오버레이 위에 놓기 위해 상대적인 위치 설정 */
+  z-index: 2;
 }
 
 .btn-learn-more {
-  background: #7c3aed;
+  background: #519008;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -122,7 +132,7 @@ nav {
 }
 
 #testimonials {
-  background: #7c3aed;
+  background: #089f35;
   color: #fff;
   padding: 60px 0;
   text-align: center;
