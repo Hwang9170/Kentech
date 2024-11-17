@@ -340,10 +340,10 @@ footer {
   background-color: #ddd;
   border: none;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 30px;
   text-align: center;
 }
