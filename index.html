@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+        <!-- 닫기 버튼 -->
+        <button class="close-btn" id="close-btn">X</button>
+        <!-- 포스터 이미지 -->
+        <img src="poster.png" alt="Poster" class="poster-image" width="20%">
+    </div>
+</div>
     <header>
         <div class="container">
             <div class="logo">
@@ -93,7 +101,20 @@
             <p>© 2024 Hwang. All rights reserved.</p>
         </div>
     </footer>
-    <script> 
+    <script>
+      window.onload = function() {
+          // 페이지 로드 시 팝업 표시
+          var popup = document.getElementById('popup');
+          var closeBtn = document.getElementById('close-btn');
+  
+          popup.style.display = 'block';
+  
+          // 닫기 버튼 클릭 시 팝업 숨기기
+          closeBtn.addEventListener('click', function() {
+              popup.style.display = 'none';
+          });
+      };
+
         document.getElementById('mobile-menu').addEventListener('click', function() {
     var navLinks = document.getElementById('nav-links');
     navLinks.classList.toggle('active');
