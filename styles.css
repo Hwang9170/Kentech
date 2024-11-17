@@ -116,6 +116,17 @@ nav {
   display: inline-block;
 }
 
+.btn-le-more {
+  background: #ffffff;
+  color: #016b1a;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+
 #features {
   padding: 60px 0;
   text-align: center;
